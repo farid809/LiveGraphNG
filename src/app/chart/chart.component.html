@@ -1,0 +1,23 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+ 
+
+  <button class="btn" (click)="add()">Add Point!</button>
+  <button class="btn btn-primary" (click)="reset()">Reset Graph</button>
+  <button class="btn btn-warning" (click)="pause_polling()">Pause Polling</button>
+  <button class="btn btn-success" (click)="resume_polling()">Resume Polling</button>
+  
+  
+  <div [chart]="chart"></div>
+
+
+
+
+  
+    
+  <input type="text" class="form-control"  #label1 (change)="updateChart(label1.value)" [(ngModel)]="options_str">
+
+
+  
+  
+
